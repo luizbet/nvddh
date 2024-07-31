@@ -2,10 +2,10 @@
         fabio.caires@unesp.br
         nucleovddh
 
-    BD de usuários
-        nvddhusrs
-        nvddhmaster
-        nvddh11071903
+    Login do banco de dados
+        nvddh_db
+        nvddh_db_main
+        Anvddh11071903#
 
     WordPress
         fabio.caires@unesp.br
