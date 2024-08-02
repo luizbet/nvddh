@@ -4,12 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NVDDH - Login</title>
+    <style>
+        @font-face {
+            font-family: 'Monserrat';
+            src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            font-family: 'Monserrat';
+            color: white;
+            background-color: #FFFEF8;
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            border-radius: 10px;
+            background-color:  #E7E6DD;
+        }
+        fieldset{
+            border: 3px solid #858682;
+       
+        }
+        legend{
+            font-size: 20px;
+            border: 3px solid #858682;
+            background-color: #858682;
+            padding: 10 px;
+            text-align: center;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <div class="box">
         <form action="">
             <fieldset>
-                <legend><b>Novo usuário</b></legend>
+                <legend><b>Login</b></legend>
                 <div class="inputBox">
                     <input type="email" placeholder="E-mail" name="email" id="email" class="inputUserEmail" required>
                 </div>
