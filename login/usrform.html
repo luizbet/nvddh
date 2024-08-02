@@ -16,97 +16,6 @@
             color: white;
             background-color: whitesmoke;
         }
-        .box{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 10px;
-            border-radius: 20px;
-            background-color:  rgba(0, 0, 0, 0.5);
-        }
-        fieldset{
-            border: 5px solid #3657A4;
-       
-        }
-        legend{
-            border: 3px solid #3657A4;
-            background-color: #3657A4;
-            padding: 10 px;
-            text-align: center;
-            border-radius: 5px;
-            color: white;
-
-        }
-        .inputBox {
-            position: relative;
-        }
-        .inputBoxBio {
-            text-align: justify;
-        }
-        .inputUser {
-            width: 100%;
-            background: none;
-            border: none;
-            border-bottom: 1px solid #3657A4;
-            outline: none;
-            color: white;
-            font-size: 15px;
-        }
-        .inputUserName {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 50%;
-            background: none;
-            border: none;
-            border-bottom: 1px solid #3657A4;
-            outline: none;
-            color: white;
-            font-size: 15px;
-        }
-        .inputUserBio {
-            width: 100%;
-            height: 200px;
-            background: none;
-            border: 1px solid #3657A4;
-            outline: none;
-            color: white;
-            font-size: 15px;
-        }
-        .inputUserLastName {
-            position: absolute;
-            top: 0px;
-            left: 50%;
-            width: 50%;
-            background: none;
-            border: none;
-            border-bottom: 1px solid #3657A4;
-            outline: none;
-            color: white;
-            font-size: 15px;
-        }
-        .labelInputName {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            pointer-events: none;
-            color: #3657A4;
-        }
-        .labelInputLastName {
-            position: absolute;
-            top: 0px;
-            left: 50%;
-            pointer-events: none;
-            color: #3657A4;
-        }
-        .labelInput {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            pointer-events: none;
-            color: #3657A4;
-        }
         </style>
 </head>
 <body>
@@ -129,13 +38,11 @@
                 </div>
                 <br>
                 <div class="inputBox">
-                    <input type="url" name="lattesusr" id="lattesusr" class="inputUser">
-                    <label for="lattesusr" class="labelInput">Lattes</label>
+                    <input type="url" placeholder="Link do Lattes" name="lattesusr" id="lattesusr" class="inputUser">
                 </div>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="lattesid" id="lattesid" class="inputUser">
-                    <label for="lattesid" class="labelInput">Id Lattes</label>
+                    <input type="text" placeholder="Id do Lattes" name="lattesid" id="lattesid" class="inputUser">
                 </div>
                 <br>
                 <input type="submit" name="submit" id="submit">
