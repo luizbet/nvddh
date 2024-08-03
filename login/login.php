@@ -1,3 +1,34 @@
+<?php
+
+    include("../login/dbconn.php");
+
+    if(isset($_POST['usrname']) && strlen($_POST['usrname']) > 0)
+    {
+        if (!isset($_SESSION))
+        session_start();
+
+        $_SESSION['usrname'] = $mysqli->escape_string($_POST['usrname']);
+        $_SESSION['senha'] = md5(md5($_POST['senha']));
+
+        $sql_code = "SELECT senha, usrname, codigo FROM nvddhusrs WHERE usrname = '$_SESSION[usrname]'"; 
+        $sql_query = $mysqli->query($sql_code) or die($mysqli->error);
+        $dado = $sql_query->fetch_assoc();
+        $total = $sql_query->num_rows;
+
+        if($total == 0) {
+            $erro[] = "Este usuário não pertence ao nosso banco de dados.";
+        }else {
+                if($dado['senha' == $_SESSION['senha'])
+                {
+                    $_SESSION['usrlogon'] = $dado['codigo']
+                
+                }else{
+                    $erro[] = "Senha incorreta";
+                }
+        }
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

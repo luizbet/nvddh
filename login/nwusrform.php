@@ -1,20 +1,3 @@
-<?php
-
-    include("../login/dbconn.php");
-
-    if(isset($_POST['usrname']) && strlen($_POST['usrname']) > 0)
-    {
-        if (!isset($_SESSION))
-        session_start();
-
-        $_SESSION['usrname'] = $mysqli->escape_string($_POST['usrname']);
-        $_SESSION['senha'] = md5(md5($_POST['senha']));
-
-        $sql_code = "SELECT senha, usrname FROM nvddhusrs WHERE usrname = $_SESSION[usrname]"; 
-
-    }
-
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
