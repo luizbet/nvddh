@@ -36,7 +36,8 @@
         if($senha != $confsenha){
             print_r('Senha e confirmação de senha não coincidem');
         }
-    $result = mysqli_query($conn, "INSERT INTO nvddhusrs(nome,sobrenome,usrname,email,senha,biousr,lattesusr,lattesid) VALUES ($nome,$sobrenome,$usrname,$email,$senha,$biousr,$lattesusr,$lattesid)");
+    
+        $result = mysqli_query($conn, "INSERT INTO nvddhusrs(nome,sobrenome,usrname,email,senha,biousr,lattesusr,lattesid) VALUES ('$nome','$sobrenome','$usrname','$email','$senha','$biousr','$lattesusr','$lattesid')");
 
     }
 
