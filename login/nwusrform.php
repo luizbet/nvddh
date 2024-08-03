@@ -23,6 +23,9 @@
 
     include_once('dbconn.php');
 
+    //definir fuso horário para o Brasil
+    date_default_timezone_set('America/Sao_Paulo');
+
         $nome = $_POST['nome'];
         $sobrenome = $_POST['sobrenome'];
         $usrname = $_POST['usrname'];
