@@ -5,7 +5,7 @@
     if(isset($_POST['usrname']) && strlen($_POST['usrname']) > 0)
     {
         if (!isset($_SESSION))
-        session_start();
+            session_start();
 
         $_SESSION['usrname'] = $mysqli->escape_string($_POST['usrname']);
         $_SESSION['senha'] = md5(md5($_POST['senha']));
@@ -20,7 +20,7 @@
         }else {
                 if($dado['senha'] == $_SESSION['senha'])
                 {
-                    $_SESSION['usrlogon'] = $dado['codigo']
+                    $_SESSION['usrlogon'] = $dado['codigo'];
                 
                 }else{
                     $erro[] = "Senha incorreta";
