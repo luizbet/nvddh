@@ -1,11 +1,9 @@
 <?php
-$servername = "154.49.247.59";
-$database = "u237680592_nvddh_db";
-$username = "u237680592_nvddh_db_dev";
-$password = "Anvddh11071903#";
-// Create connection
+    $servername = "154.49.247.59";
+    $database = "u237680592_nvddh_db";
+    $username = "u237680592_nvddh_db_dev";
+    $password = "Anvddh11071903#";
 $conn = mysqli_connect($servername, $username, $password, $database);
-// Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
