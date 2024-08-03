@@ -1,22 +1,19 @@
-<?php
-
-    if (isset($_POST['submit']))
-    {
-    
-        print_r($POST['codigo'])
-        print_r($POST['nome'])
-        print_r($POST['sobrenome'])
-        print_r($POST['usrname'])
-        print_r($POST['email'])
-        print_r($POST['nvlaccess'])
-        print_r($POST['cddate'])
-        print_r($POST['biousr'])
-        print_r($POST['lattesusr'])
-        print_r($POST['lattesid'])
-
-    }
-
-?>
+//
+//    if (isset($_POST['submit']))
+//    {
+//    
+//        print_r($POST['codigo'])
+//        print_r($POST['nome'])
+//        print_r($POST['sobrenome'])
+//        print_r($POST['usrname'])
+//        print_r($POST['email'])
+//        print_r($POST['nvlaccess'])
+//        print_r($POST['cddate'])
+//        print_r($POST['biousr'])
+//        print_r($POST['lattesusr'])
+//        print_r($POST['lattesid'])
+//    }
+//?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
