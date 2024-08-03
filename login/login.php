@@ -111,7 +111,7 @@
 </head>
 <body>
     <?php if (count($erro) > 0) {
-        echo "<p>$msg</p>"
+        echo "<p>$msg</p>";
     }>
     ?>
     <div class="box">
