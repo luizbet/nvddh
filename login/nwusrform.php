@@ -1,7 +1,19 @@
 <?php
 
-    if (isset($_POST['submit'])) {
-        # code...
+    if (isset($_POST['submit']))
+    {
+    
+        print_r($POST['codigo'])
+        print_r($POST['nome'])
+        print_r($POST['sobrenome'])
+        print_r($POST['usrname'])
+        print_r($POST['email'])
+        print_r($POST['nvlaccess'])
+        print_r($POST['cddate'])
+        print_r($POST['biousr'])
+        print_r($POST['lattesusr'])
+        print_r($POST['lattesid'])
+
     }
 
 ?>
@@ -148,7 +160,7 @@
                 </div>
                 <br><br><br>
                 <div>
-                    <input type="text" placeholder="Nome de usuário" name="username" id="username" class="inputUserName" required>
+                    <input type="text" placeholder="Nome de usuário" name="usrname" id="username" class="inputUserName" required>
                 </div>
                 <br><br><br>
                 <div>
