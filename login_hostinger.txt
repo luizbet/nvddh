@@ -3,9 +3,10 @@
         nucleovddh
 
     Login do banco de dados
-        nvddh_db
-        nvddh_db_dev
-        Anvddh11071903#
+        servername = "154.49.247.59";
+        database = "u237680592_nvddh_db";
+        username = "u237680592_nvddh_db_dev";
+        password = "Anvddh11071903#";
 
     WordPress
         fabio.caires@unesp.br
