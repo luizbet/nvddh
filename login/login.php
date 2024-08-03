@@ -1,9 +1,8 @@
 <?php
 
-    include("dbconn.php");
+    include("dbconn.php");1
 
-    if(isset($_POST['usrname']) && strlen($_POST['usrname']) > 0)
-    {
+    if(isset($_POST['usrname']) && strlen($_POST['usrname']) > 0){
         if (!isset($_SESSION))
             session_start();
 
@@ -17,7 +16,7 @@
 
         if($total == 0) {
             $erro[] = "Este usuário não pertence ao nosso banco de dados.";
-        }else {
+        }else{
                 if($dado['senha'] == $_SESSION['senha'])
                 {
                     $_SESSION['usrlogon'] = $dado['codigo'];
