@@ -7,4 +7,11 @@
 
     $connect_db = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName)
 
+    if ($connect_db->connect_errno)
+    {
+        echo "erro";
+    }
+    else {
+        echo "Conexão realizada com sucesso";
+    }
 ?>
