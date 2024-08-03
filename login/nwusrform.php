@@ -4,19 +4,19 @@
     {
         print_r('Nome: ' . $_POST['nome']);
         print_r('<br>');
-        print_r('Nome: ' . $_POST['sobrenome']);
+        print_r('Sobrenome: ' . $_POST['sobrenome']);
         print_r('<br>');
-        print_r('Nome: ' . $_POST['usrname']);
+        print_r('Usuário: ' . $_POST['usrname']);
         print_r('<br>');
-        print_r('Nome: ' . $_POST['email']);
+        print_r('E-mail: ' . $_POST['email']);
         print_r('<br>');
-        print_r('Nome: ' . $_POST['senha']);
+        print_r('senha: ' . $_POST['senha']);
         print_r('<br>');
-        print_r('Nome: ' . $_POST['biousr']);
+        print_r('Bio: ' . $_POST['biousr']);
         print_r('<br>');
-        print_r('Nome: ' . $_POST['lattesusr']);
+        print_r('Link do Lattes: ' . $_POST['lattesusr']);
         print_r('<br>');
-        print_r('Nome: ' . $_POST['lattesid']);
+        print_r('Id do Lattes: ' . $_POST['lattesid']);
         print_r('<br>');
     }
 
