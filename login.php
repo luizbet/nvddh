@@ -1,5 +1,5 @@
 <?php
-    include("../login/dbconn.php");
+    include("dbconn.php");
 
     if(isset($_POST['usrname']) && strlen($_POST['usrname']) > 0){
         
