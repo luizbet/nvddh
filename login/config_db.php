@@ -5,6 +5,6 @@
     $dbPassword = 'Anvddh11071903#';
     $dbName = 'nvddhusrs';
 
-    $connect_db = new mysqli()
+    $connect_db = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName)
 
 ?>
