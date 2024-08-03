@@ -32,7 +32,7 @@
         $biousr = $_POST['biousr'];
         $lattesusr = $_POST['lattesusr'];
         $lattesid = $_POST['lattesid'];
-        $cddate = date('d/m/Y H:i');
+        $cddate = date("Y-m-d H:i:s");
     
         if($senha != $confsenha){
             print_r('Senha e confirmação de senha não coincidem');
