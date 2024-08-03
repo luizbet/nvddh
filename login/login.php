@@ -18,7 +18,7 @@
         if($total == 0) {
             $erro[] = "Este usuário não pertence ao nosso banco de dados.";
         }else {
-                if($dado['senha' == $_SESSION['senha'])
+                if($dado['senha'] == $_SESSION['senha'])
                 {
                     $_SESSION['usrlogon'] = $dado['codigo']
                 
