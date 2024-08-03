@@ -28,6 +28,10 @@
         }
     }
 
+    if(count($erro) == 0 || !isset($erro)){
+        echo "<script>alert('Login efetuado com sucesso'); location.href='sucesso.php';</script>";
+    
+    }
 ?>
 
 <!DOCTYPE html>
