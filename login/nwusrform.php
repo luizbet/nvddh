@@ -2,21 +2,21 @@
 
     if(isset($_POST['submit']))
     {
-        print_r('Nome: ' - $_POST['nome']);
+        print_r('Nome: ' . $_POST['nome']);
         print_r('<br>');
-        print_r('Nome: ' - $_POST['sobrenome']);
+        print_r('Nome: ' . $_POST['sobrenome']);
         print_r('<br>');
-        print_r('Nome: ' - $_POST['usrname']);
+        print_r('Nome: ' . $_POST['usrname']);
         print_r('<br>');
-        print_r('Nome: ' - $_POST['email']);
+        print_r('Nome: ' . $_POST['email']);
         print_r('<br>');
-        print_r('Nome: ' - $_POST['senha']);
+        print_r('Nome: ' . $_POST['senha']);
         print_r('<br>');
-        print_r('Nome: ' - $_POST['biousr']);
+        print_r('Nome: ' . $_POST['biousr']);
         print_r('<br>');
-        print_r('Nome: ' - $_POST['lattesusr']);
+        print_r('Nome: ' . $_POST['lattesusr']);
         print_r('<br>');
-        print_r('Nome: ' - $_POST['lattesid']);
+        print_r('Nome: ' . $_POST['lattesid']);
         print_r('<br>');
     }
 
