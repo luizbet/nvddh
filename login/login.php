@@ -1,6 +1,6 @@
 <?php
 
-    include("dbconn.php");1
+    include("dbconn.php");
 
     if(isset($_POST['usrname']) && strlen($_POST['usrname']) > 0){
         if (!isset($_SESSION))
