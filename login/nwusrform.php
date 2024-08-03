@@ -2,24 +2,39 @@
 
     if(isset($_POST['submit']))
     {
-        print_r('Nome: ' . $_POST['nome']);
-        print_r('<br>');
-        print_r('Sobrenome: ' . $_POST['sobrenome']);
-        print_r('<br>');
-        print_r('Usuário: ' . $_POST['usrname']);
-        print_r('<br>');
-        print_r('E-mail: ' . $_POST['email']);
-        print_r('<br>');
-        print_r('senha: ' . $_POST['senha']);
-        print_r('<br>');
-        print_r('Confirmação de senha: ' . $_POST['confsenha']);
-        print_r('<br>');
-        print_r('Bio: ' . $_POST['biousr']);
-        print_r('<br>');
-        print_r('Link do Lattes: ' . $_POST['lattesusr']);
-        print_r('<br>');
-        print_r('Id do Lattes: ' . $_POST['lattesid']);
-        print_r('<br>');
+    //   print_r('Nome: ' . $_POST['nome']);
+    //    print_r('<br>');
+    //    print_r('Sobrenome: ' . $_POST['sobrenome']);
+    //    print_r('<br>');
+    //    print_r('Usuário: ' . $_POST['usrname']);
+    //    print_r('<br>');
+    //    print_r('E-mail: ' . $_POST['email']);
+    //    print_r('<br>');
+    //    print_r('senha: ' . $_POST['senha']);
+    //    print_r('<br>');
+    //    print_r('Confirmação de senha: ' . $_POST['confsenha']);
+    //    print_r('<br>');
+    //    print_r('Bio: ' . $_POST['biousr']);
+    //    print_r('<br>');
+    //    print_r('Link do Lattes: ' . $_POST['lattesusr']);
+    //    print_r('<br>');
+    //    print_r('Id do Lattes: ' . $_POST['lattesid']);
+    //    print_r('<br>');
+
+    include_once('dbconn.php');
+
+        $nome = $_POST['nome'];
+        $sobrenome = $_POST['sobrenome'];
+        $usrname = $_POST['usrname'];
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+        $confsenha = $_POST['confsenha'];
+        $biousr = $_POST['biousr'];
+        $lattesusr = $_POST['lattesusr'];
+        $lattesid = $_POST['lattesid'];
+
+    $result = mysqli_query($conn, "INSERT INTO nvddhusrs(nome,sobrenome,usrname,email,senha,biousr,lattesusr,lattesid) VALUES ($nome,$sobrenome,$usrname,$email,$senha,$biousr,$lattesusr,$lattesid)");
+
     }
 
 ?>
