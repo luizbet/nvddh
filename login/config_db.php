@@ -1,16 +1,18 @@
 <?php
+$servername = "154.49.247.59";
+$database = "nvddh_db";
+$username = "nvddh_db_dev";
+$password = "Anvddh11071903#";
 
-    $dbHost = '154.49.247.52';
-    $dbUsername = 'u237680592_nvddh_db_dev';
-    $dbPassword = 'Anvddh11071903#';
-    $dbName = 'nvddhusrs';
+// Create connection
 
-    $connect_db = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName)
+$conn = mysqli_connect($servername, $username, $password, $database);
 
-    if ($connect_db->connect_errno){
-        echo "erro";
-    }
-    else {
-        echo "Conexão realizada com sucesso";
-    }
-?>
+// Check connection
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+mysqli_close($conn);
+?>  
