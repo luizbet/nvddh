@@ -32,12 +32,13 @@
         $biousr = $_POST['biousr'];
         $lattesusr = $_POST['lattesusr'];
         $lattesid = $_POST['lattesid'];
+        $cddate = date('d/m/Y H:i');
     
         if($senha != $confsenha){
             print_r('Senha e confirmação de senha não coincidem');
         }
     
-        $result = mysqli_query($conn, "INSERT INTO nvddhusrs(nome,sobrenome,usrname,email,senha,biousr,lattesusr,lattesid) VALUES ('$nome','$sobrenome','$usrname','$email','$senha','$biousr','$lattesusr','$lattesid')");
+        $result = mysqli_query($conn, "INSERT INTO nvddhusrs(nome,sobrenome,usrname,email,senha,biousr,lattesusr,lattesid,cddate) VALUES ('$nome','$sobrenome','$usrname','$email','$senha','$biousr','$lattesusr','$lattesid','$cddate')");
 
     }
 
