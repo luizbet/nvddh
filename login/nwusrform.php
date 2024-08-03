@@ -21,7 +21,7 @@
     //    print_r('Id do Lattes: ' . $_POST['lattesid']);
     //    print_r('<br>');
 
-    include_once('dbconn.php');
+    include_once('/login/dbconn.php');
 
         $nome = $_POST['nome'];
         $sobrenome = $_POST['sobrenome'];
