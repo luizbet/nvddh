@@ -1,3 +1,11 @@
+<?php
+
+    if (isset($_POST['submit'])) {
+        # code...
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -130,7 +138,7 @@
 </head>
 <body>
     <div class="box">
-        <form action="">
+        <form action="nwusrform.php" method="POST">
             <fieldset>
                 <legend><b>Novo usuário</b></legend>
                 <br><br>
