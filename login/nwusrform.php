@@ -33,7 +33,9 @@
         $lattesusr = $_POST['lattesusr'];
         $lattesid = $_POST['lattesid'];
     
-
+        if($senha != $confsenha){
+            echo"Senha e confirmação de senha não coincidem";
+        }
     $result = mysqli_query($conn, "INSERT INTO nvddhusrs(nome,sobrenome,usrname,email,senha,biousr,lattesusr,lattesid) VALUES ($nome,$sobrenome,$usrname,$email,$senha,$biousr,$lattesusr,$lattesid)");
 
     }
