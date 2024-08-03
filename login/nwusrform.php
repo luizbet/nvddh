@@ -12,6 +12,8 @@
         print_r('<br>');
         print_r('senha: ' . $_POST['senha']);
         print_r('<br>');
+        print_r('Confirmação de senha: ' . $_POST['confsenha']);
+        print_r('<br>');
         print_r('Bio: ' . $_POST['biousr']);
         print_r('<br>');
         print_r('Link do Lattes: ' . $_POST['lattesusr']);
