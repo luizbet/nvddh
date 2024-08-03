@@ -4,7 +4,7 @@
 
     Login do banco de dados
         nvddh_db
-        nvddh_db_main
+        nvddh_db_dev
         Anvddh11071903#
 
     WordPress
