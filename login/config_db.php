@@ -1,6 +1,6 @@
 <?php
 
-    $dbHost = 'http://nvddh.com.br';
+    $dbHost = 'http://nvddh.com.br/u237680592_nvddh_db';
     $dbUsername = 'u237680592_nvddh_db_main';
     $dbPassword = 'Anvddh11071903#';
     $dbName = 'nvddhusrs';
