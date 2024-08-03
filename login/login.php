@@ -1,5 +1,4 @@
 <?php
-
     include("dbconn.php");
 
     if(isset($_POST['usrname']) && strlen($_POST['usrname']) > 0){
@@ -16,7 +15,7 @@
         $total = $sql_query->num_rows;
 
         if($total == 0) {
-            $erro[] = "Este usuário não pertence ao nosso banco de dados.";
+            $erro[] = "Este usuário não pertence ao nosso banco de dados";
         }else{
                 if($dado['senha'] == $_SESSION['senha'])
                 {
