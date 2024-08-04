@@ -18,7 +18,7 @@
         }
         .box{
             position: absolute;
-            width: 351px;
+            width: 350px;
             height: 350px;
             top: 50%;
             left: 50%;
