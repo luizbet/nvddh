@@ -37,7 +37,7 @@
         $lattesid = $_POST['lattesid'];
         $cddate = date("Y-m-d H:i:s");
     
-        if($senha != $confsenha){
+         if($senha != $confsenha){
             print_r('Senha e confirmação de senha não coincidem');
         }
     
